@@ -5,16 +5,21 @@ const Mebo = require('mebo');
 require('babel-register');
 
 require('./ResizeImage');
+require('./Hello');
 
 // command-line support:
+// # listing actions:
+// node . --cli
+//
+// # executing actions:
 // node . --cli resizeImage --help
 // node . --cli resizeImage --width=50 --height=50 data/logo.png > /tmp/logoTarget.png
-if (process.argv.includes('--cli')) {
+// node . --cli hello --help
+// node . --cli hello "Ola mundo!"
+if (require.main === module && process.argv.includes('--cli')) {
 
-  // for this example we could be executing resizeImage directly, since this is the
-  // only action. However, keeping as demonstration the logic about how to query the
-  // action name from the args (in case you want to provide more actions through
-  // cli handler)
+  // in case you just want to provide a single action through cli
+  // take a look at the documentation: https://mebohq.github.io/docs/class/src/Handlers/Cli.js~Cli.html
   const actionName = process.argv[process.argv.indexOf('--cli')];
 
   // creating a command-line handler which is used to load the command-line

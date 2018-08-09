@@ -13,8 +13,14 @@ Implements a simple resize image action which is available through command-line
 git clone https://github.com/meboHQ/example-cli.git
 cd example-cli
 npm install
+# listing actions:
+node . --cli
+
+# executing actions:
+node . --cli hello --help
+node . --cli hello "Ola mundo!"
 node . --cli resizeImage --help
-NODE_ENV=development node . --cli resizeImage --width=50 --height=50 data/logo.png > /tmp/logoTarget.png
+node . --cli resizeImage --width=50 --height=50 data/logo.png > /tmp/logoTarget.png
 ```
 
 ## Licensing
