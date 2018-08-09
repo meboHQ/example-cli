@@ -29,7 +29,7 @@ class ResizeImage extends Mebo.Action{
       .embed()
       .toBuffer());
 
-    return Promise.resolve(resizedImageBuffer);
+    return resizedImageBuffer;
   }
 }
 
