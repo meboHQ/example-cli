@@ -2,8 +2,8 @@
   <img src="https://mebohq.github.io/docs/data/logo.png"/>
 </p>
 
-## Hello World Example
-Implements a simple resize image action which is available through command-line
+## Commnad-line integration example
+Implements a simple resize image action and hello world output which are available through command-line
 
 ## Requirements
 - Node 8 or greater
