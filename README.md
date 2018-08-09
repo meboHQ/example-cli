@@ -8,7 +8,7 @@ Implements a simple resize image action and hello world output which are availab
 ## Requirements
 - Node 8 or greater
 
-## Running example:
+## Running examples:
 ```
 git clone https://github.com/meboHQ/example-cli.git
 cd example-cli
