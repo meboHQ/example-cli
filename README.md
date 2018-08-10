@@ -3,7 +3,7 @@
 </p>
 
 ## Commnad-line integration example
-Implements a simple resize image action and hello world output which are available through command-line
+Implements a simple resize image action and hello world action which are available through command-line
 
 ## Requirements
 - Node 8 or greater
