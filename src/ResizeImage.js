@@ -33,3 +33,4 @@ class ResizeImage extends Mebo.Action{
   }
 }
 
+module.exports = ResizeImage;
