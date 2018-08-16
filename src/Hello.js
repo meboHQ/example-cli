@@ -10,8 +10,8 @@ class Hello extends Mebo.Action{
     this.setMeta('$cliDescription', "Example printing hello world");
   }
 
-  _perform(data){
-    return Promise.resolve(data.content);
+  async _perform(data){
+    return data.content;
   }
 }
 
