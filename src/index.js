@@ -20,10 +20,6 @@ if (require.main === module && process.argv.includes('--cli')) {
 
   // in case you just want to provide a single action through cli
   // take a look at the documentation: https://mebohq.github.io/docs/class/src/Handlers/Cli.js~Cli.html
-  const actionName = process.argv[process.argv.indexOf('--cli')];
-
-  // creating a command-line handler which is used to load the command-line
-  // arguments to the action and to output the result back to the command-line
-  Mebo.Handler.get('cli').init(actionName);
+  Mebo.Handler.get('cli').init();
 }
 
