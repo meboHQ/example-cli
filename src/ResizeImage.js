@@ -16,7 +16,7 @@ class ResizeImage extends Mebo.Action{
     this.createInput('width: numeric', {description: "Width used for the target image"});
     this.createInput('height: numeric', {description: "Height used for the target image"});
 
-    this.setMeta('$cliDescription', "Example of resize image action");
+    this.setMeta('description', "Example of resize image action");
   }
 
   async _perform(data){
