@@ -25,9 +25,7 @@ class ResizeImage extends Mebo.Action{
     const resizedImageBuffer = await (sharp(imageBuffer)
       .resize(data.width, data.height, {
         kernel: sharp.kernel.lanczos2,
-      })
-      .embed()
-      .toBuffer());
+      }) .toBuffer());
 
     return resizedImageBuffer;
   }

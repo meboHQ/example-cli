@@ -9,17 +9,17 @@ require('./Hello');
 
 // command-line support:
 // # listing actions:
-// node . --cli
+// node . --help
 //
 // # executing actions:
-// node . --cli resizeImage --help
-// node . --cli resizeImage --width=50 --height=50 data/logo.png > /tmp/logoTarget.png
-// node . --cli hello --help
-// node . --cli hello "Ola mundo!"
-if (require.main === module && process.argv.includes('--cli')) {
-
+// node . resizeImage --help
+// node . resizeImage --width=50 --height=50 data/logo.png > /tmp/logoTarget.png
+// node . hello --help
+// node . hello
+// node . hello "Ola mundo!"
+const cli = Mebo.Handler.get('cli');
+if (cli.isSupported()){
   // in case you just want to provide a single action through cli
   // take a look at the documentation: https://mebohq.github.io/docs/class/src/Handlers/Cli.js~Cli.html
-  Mebo.Handler.get('cli').init();
+  cli.init();
 }
-

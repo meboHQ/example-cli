@@ -14,13 +14,14 @@ git clone https://github.com/meboHQ/example-cli.git
 cd example-cli
 npm install
 # listing actions:
-node . --cli
+node . --help
 
 # executing actions:
-node . --cli hello --help
-node . --cli hello "Ola mundo!"
-node . --cli resizeImage --help
-node . --cli resizeImage --width=50 --height=50 data/logo.png > /tmp/logoTarget.png
+node . hello --help
+node . hello
+node . hello "Ola mundo!"
+node . resizeImage --help
+node . resizeImage --width=50 --height=50 data/logo.png > /tmp/logoTarget.png
 ```
 
 ## Licensing
